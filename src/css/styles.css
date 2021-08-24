@@ -56,6 +56,7 @@ h1 { font-size: 287.5%; }
 h2 { font-size: 225%; }
 h3 { font-size: 150%; }
 
+
 p,
 a {
   font-family: 'Bai Jamjuree';
@@ -82,6 +83,12 @@ a {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  transform: scale(1);
+  transition: transform linear .35s;
+}
+
+.clipboard-intro:hover {
+ transform: scale(1.15);
 }
 
 /* ==== KOPF-BEREICH ==== */
@@ -120,6 +127,16 @@ a {
 .header-text h1{
   margin-top: 2.5rem;
   margin-bottom: 0;
+}
+
+h1 {
+  color: transparent;
+}
+h1 {
+  background-image: linear-gradient(to right, rgba(255,255,255, .3), rgba(255,255,255, .5) ),
+   linear-gradient(180deg, rgba(75,84,91, 1) 10%, rgba(0,0,0, 1));
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .header-text > p {
   font-size: 125%;
@@ -290,6 +307,14 @@ a {
 .worflow__article-box-text h3 {
   margin: 0;
 }
+.workflow__article-box-svg {
+  fill: #9EABB2;
+  transition: 350ms;
+}
+
+.workflow__article-box-svg:hover {
+fill: rgba(38,187,164, .75);
+}
 
 
 /* ==== SPONSOREN-LINKS ====  */
@@ -339,7 +364,7 @@ a {
 
 /* ==== FOOTER-BEREICH ==== */
 .footer {
-  background: rgb(242,242,242);
+  background: rgba(242,242,242);
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
