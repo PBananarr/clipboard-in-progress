@@ -365,7 +365,7 @@ fill: rgba(38,187,164, .75);
 /* ==== FOOTER-BEREICH ==== */
 .footer {
   background: rgba(242,242,242);
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
 }
 .footer__grid-container {
